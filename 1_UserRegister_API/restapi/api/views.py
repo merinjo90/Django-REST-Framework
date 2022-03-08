@@ -47,6 +47,14 @@ class userDetails(APIView):
         serializer=UserDataSerializer(userData)
         return Response(serializer.data)
 
+    def put(self,request,pk,format=None):
+        userData = self.get_object(pk)
+        serializer=UserDataSerializer(userData,data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response({'message':'error','error':serializer.errors})
+
 
 
 
