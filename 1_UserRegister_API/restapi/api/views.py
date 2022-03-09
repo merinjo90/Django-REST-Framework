@@ -6,6 +6,9 @@ from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from django.contrib.auth.models import User
 from django.http import Http404
+from rest_framework.pagination import PageNumberPagination
+from rest_framework.generics import ListAPIView
+
 
 
 # Create your views here.
@@ -59,6 +62,14 @@ class userDetails(APIView):
         userData = self.get_object(pk)
         userData.delete()
         return Response({'message':'user deleted'})
+
+class setPagination(PageNumberPagination):
+    page_size=2
+
+class paginationApi(ListAPIView):
+    queryset = User.objects.all()
+    serializer_class = UserDataSerializer
+    pagination_class = setPagination
 
 
 
