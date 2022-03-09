@@ -8,7 +8,7 @@ from django.contrib.auth.models import User
 from django.http import Http404
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.generics import ListAPIView
-
+from rest_framework.filters import SearchFilter
 
 
 # Create your views here.
@@ -70,6 +70,8 @@ class paginationApi(ListAPIView):
     queryset = User.objects.all()
     serializer_class = UserDataSerializer
     pagination_class = setPagination
+    filter_backends = (SearchFilter,)
+    search_fields= ('username','email','first_name','last_name')
 
 
 
