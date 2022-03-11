@@ -26,8 +26,6 @@ Token Authentication API
 User update and delete API
 
 Pagination and Search API
-
-
  
 ## Screenshot from the User Registration and Login
 
@@ -38,7 +36,6 @@ User GET details
 User UPDATE 
 
 ![2api](https://user-images.githubusercontent.com/83909801/157365010-62570023-64ec-415a-a715-f75a4fa988b7.png)
-
 
 ![3api](https://user-images.githubusercontent.com/83909801/157365536-608d56d9-23ab-4fc9-8c81-e8378e98ba1a.png)
 
@@ -66,7 +63,6 @@ Add 'rest_framework' to your INSTALLED_APPS setting.
 
 3.Django REST framework (3.12, 3.13)
 
-
 #### User Registration and Login for the project is available at
 
 https://github.com/merinjo90/Django-REST-Framework/tree/master/1_UserRegister_API/restapi. 
@@ -76,20 +72,17 @@ https://github.com/merinjo90/Django-REST-Framework/tree/master/1_UserRegister_AP
 https://github.com/merinjo90/Django-REST-Framework/blob/master/1_UserRegister_API/userReg_log.gif
 
 
-
 # 2.Django-DRF-Quiz-API
 
 Quiz API developed using Django  & DjangoRestFramework.
 
 Created a project QuizAPI_Django  created an api . It created 4 models Category,Quizzes,Questions & Answers. created a model Updated to log change in time for updates in model (Question & Answer) created serializers for models Category,Quizzes,Questions & Answers. added 2 more serializers RandomQuestionSerializer And QuestionSerializer for taking quiz on a specific topic.Topic to be passed through str:topic via URL in urls.py Created a nested serializer in RandomQuestionSerializer And QuestionSerializer for displaying Category, Questions and Answers all together in the API to make it more presentable and unserstandable. A full-fledged working API On The Go.Communcation between Bot with Django Done through DRF Api.
 
-
 quiz get api is working
 
 go to api/quiz/ to get all quizes
 
 go to api/quiz/q/(name of quiz) to get all questions and answers related to quiz
-
  
 ## Screenshot from the Django-DRF-Quiz-API
 
@@ -104,7 +97,6 @@ go to api/quiz/r/(name of quiz) to get all questions  related to quiz
 go to api/quiz/q/(name of quiz) to get all questions and answers related to quiz
 
 ![3_quizqustn](https://user-images.githubusercontent.com/83909801/157634214-df1b4f43-edaf-459b-9303-51f5f72ac85f.png)
-
 
 #### Django-DRF-Quiz-API project is available at
 
@@ -129,12 +121,9 @@ detail view at
 
 ![2_blog](https://user-images.githubusercontent.com/83909801/157819989-abfb4cda-61b9-429a-9861-5ae855ebf2ad.png)
 
-
-
 #### Django-DRF- Blog API project is available at
 
 https://github.com/merinjo90/Django-REST-Framework/tree/master/3_Blog_API
-
 
 #### Demo for the Django-DRF- Blog Project
 
